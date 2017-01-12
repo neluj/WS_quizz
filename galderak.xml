@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<?xml-stylesheet stylesheet type= text/xsl "text/xsl" href="galderakErakutsi.xsl"?>
+<assessmentItems>
+	<assessmentItem complexity="3" subject="mikologia">
+		<itemBody> 
+			<p>Amanita muskaria zer da?</p>
+		</itemBody>
+		<correctResponse>
+			<value>Perretxikoa</value>
+		</correctResponse>
+	</assessmentItem>
+	<assessmentItem complexity="5" subject="mikologia">
+		<itemBody>
+			<p>Amanita hilkorrena zein da?</p>
+		</itemBody>
+		<correctResponse>
+			<value>Phalloides</value>
+		</correctResponse>
+	</assessmentItem>
+	<assessmentItem complexity="4" subject="mikologia">
+		<itemBody>
+			<p>Amanita cesarea jangarria da. Bai ala Ez?</p>
+		</itemBody>
+		<correctResponse>
+			<value>Bai</value>
+		</correctResponse>
+	</assessmentItem>
+	<assessmentItem complexity="3" subject="mikologia">
+		<itemBody>
+			<p>probatzen xml</p>
+		</itemBody>
+		<correctResponse>
+			<value>ondo duaaa</value>
+		</correctResponse>
+		</assessmentItem>
+<assessmentItem complexity="1" subject="eztakitx"><itemBody><p>raweaweae</p></itemBody><correctResponse><value>aeawewa</value></correctResponse></assessmentItem><assessmentItem complexity="1" subject="jygj"><itemBody><p>gjygj</p></itemBody><correctResponse><value>gjygj</value></correctResponse></assessmentItem><assessmentItem complexity="hutsa" subject="vgrd"><itemBody><p/></itemBody><correctResponse><value/></correctResponse></assessmentItem><assessmentItem complexity="hutsa" subject="vgrd"><itemBody><p/></itemBody><correctResponse><value/></correctResponse></assessmentItem><assessmentItem complexity="hutsa" subject="ouioi"><itemBody><p/></itemBody><correctResponse><value/></correctResponse></assessmentItem><assessmentItem complexity="hutsa" subject="o9o9"><itemBody><p>dad</p></itemBody><correctResponse><value>adaw</value></correctResponse></assessmentItem><assessmentItem complexity="hutsa" subject="o9o9"><itemBody><p>dad</p></itemBody><correctResponse><value>adaw</value></correctResponse></assessmentItem><assessmentItem complexity="hutsa" subject="o9o9"><itemBody><p>dad</p></itemBody><correctResponse><value>adaw</value></correctResponse></assessmentItem><assessmentItem complexity="1" subject="gftr"><itemBody><p>fgf</p></itemBody><correctResponse><value>fgttg</value></correctResponse></assessmentItem><assessmentItem complexity="3" subject="sfsef"><itemBody><p>feasfe</p></itemBody><correctResponse><value>sfsef</value></correctResponse></assessmentItem><assessmentItem complexity="1" subject=" cx"><itemBody><p> c</p></itemBody><correctResponse><value> rgdr</value></correctResponse></assessmentItem><assessmentItem complexity="2" subject="srdgrg"><itemBody><p>rgsrdg</p></itemBody><correctResponse><value>sgdr</value></correctResponse></assessmentItem><assessmentItem complexity="hutsa" subject="o8yo8y"><itemBody><p>o9io9u</p></itemBody><correctResponse><value>oy8y</value></correctResponse></assessmentItem><assessmentItem complexity="hutsa" subject="yo88yoyo"><itemBody><p>yo88yo8y</p></itemBody><correctResponse><value>yo8yo</value></correctResponse></assessmentItem><assessmentItem complexity="hutsa" subject="yo8yo8y"><itemBody><p>o8yo8yo8y</p></itemBody><correctResponse><value>yo88yo8</value></correctResponse></assessmentItem><assessmentItem complexity="3" subject="yo88yo"><itemBody><p>o8yo8yo</p></itemBody><correctResponse><value>y8oyo88y</value></correctResponse></assessmentItem></assessmentItems>

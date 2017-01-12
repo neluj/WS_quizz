@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="tipo_contenido" content="text/html;" http-equiv="content-type" charset="utf-8">
+	<title>Sign Up</title>
+	 <script type="text/javascript">
+	 function egiaztatu(){
+	 	var nam = document.getElementById("name").value;
+	 	if (nam == null|| nam == "") {
+	 		alert("Izenaren atala hau ezin da hutsik egon");
+	 		return false;
+	 	}
+	 	var abi1 = document.getElementById("lastname1").value;
+	 	if (abi1 == null|| abi1 == "") {
+	 		alert("Lehenengo abizenaren atala hau ezin da hutsik egon");
+	 		return false;
+	 	}
+	 	var abi2 = document.getElementById("lastname2").value;
+	 	if (abi2 == null|| abi2 == "") {
+	 		alert("Bigarren abizenaren atala hau ezin da hutsik egon");
+	 		return false;
+	 	}
+	 	var ema = document.getElementById("email").value;
+	 	if (ema == null|| ema == "") {
+	 		alert("Posta elektronikoaren atala hau ezin da hutsik egon");
+	 		return false;
+	 	}
+	 	var pas = document.getElementById("passwd").value;
+	 	if(pas.length < 6){
+	 		alert("Pasahitza laburregia da. Gutxienez 6 karaktere izan behar ditu");
+	 		return false;
+	 	}
+	 	var ok = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))[0-9]{3}@ikasle.ehu.[eus|es]/;
+	 	var kor = document.getElementById("email").value;
+	 	if (!ok.test(kor)) {
+	 		alert("Sartu duzun korreoa ez da egokia. Mesedez saiatu berriro");
+	 		return false;
+	 	}
+	 	var tel = document.getElementById("telnum").value;
+	 	var ok2 = /^\d{9}$/
+	 	if (!ok2.test(tel)) {
+	 		alert("Sartu duzun telefono zenbakia ez da egokia. Mesedez sartu berriro.");
+	 		return false;
+	 	}
+	 	var sAux="";
+	 	var frm=document.getElementById("erregistro");
+	 	for(i=0;i<frm.elements.length-1;i++){
+	 		sAux +="IZENA: " + frm.elements[i].id+" ";
+	 		sAux +="BALIOA: " + frm.elements[i].value+"\n";
+	 	}
+	 	alert(sAux);
+	 }
+	 </script>
+    <link rel='stylesheet' type='text/css' href='stylesPWS/style.css' />
+	<link rel='stylesheet' 
+		   type='text/css' 
+		   media='only screen and (min-width: 530px) and (min-device-width: 481px)'
+		   href='stylesPWS/wide.css' />
+	<link rel='stylesheet' 
+		   type='text/css' 
+		   media='only screen and (max-width: 480px)'
+		   href='stylesPWS/smartphone.css' />
+		<link rel='stylesheet' type='text/css' href='stylesPWS/izenburuak.css' /> 
+
+  </head>
+  <body>
+  <div id='page-wrap'>
+	<header class='main' id='h1'>
+      <span class="right"><a href="SignIn.html">LogIn</a> </span>
+      <span class="right" style="display:none;"><a href="/logout">LogOut</a> </span>
+	<h2>Quiz: crazy questions</h2>
+    </header>
+	<nav class='main' id='n1' role='navigation'>
+		<span><a href='layout.html'>Home</a></span>
+		<span><a href='seeXMLQuenstions.php'>Quizzes</a></span>
+	    <span><a href='signUp.html'>Sign Up</a></span>
+		<span><a href='credits.html'>Credits</a></span>
+	</nav>
+    <section class="main" id="s1" >
+	<div>
+	<form action="Enroll.php" enctype="multipart/form-data" method="post" id = "erregistro" name = "erregistro" onSubmit = "return egiaztatu()">
+	<label for="name">Izena:</label>
+	<br>
+	<input type="text"  name="name" id="name" value="" >
+	<br>
+	<label for="lastname1">Lehenengo abizena:</label>
+	<br>
+	<input type="text" name="lastname1" id="lastname1" value="" >
+	<br>
+	<label for="lastname2">Bigarren abizena:</label>
+	<br>
+	<input type="text" name="lastname2" id="lastname2" value="" >
+	<br>
+	<label for="email">Posta elektronikoa:</label>
+	<br>
+	<input type="text" name="email" id="email" value="" >
+	<br>
+	<label for="passwd">Pasahitza:</label>
+	<br>
+	<input type="password" name="passwd" id="passwd" value="" >
+	<br>
+	<label for="telnum">Telefono zenbakia:</label>
+	<br>
+	<input type="text" name="telnum" id="telnum" value="" >
+	<br>
+	<label for="espe">Espezialitatea:</label>
+	<br>
+	<select name="espe" id="espe">
+    <option value="Software Ingenieritza">Software Ingenieritza</option>
+    <option value="Konputagailuen Ingenieritza">Konputagailuen Ingenieritza</option>
+    <option value="Konputazioa">Konputazioa</option>
+    <option value="best">Besterik</option>  
+    </select>
+    <br>
+	<label for="text">Besterik bada</label>
+	<br>
+	<input type="text" name="besterik" id="besterik" value="" >
+	<br>
+    <label for="interesak">Interesa duzun teknologiak eta erremintak:</label>
+    <br>
+	<textarea name="interesak" id="interesak" rows="10" cols="40" value=""></textarea>
+	<br>
+    <label for="interesak">Kargatu zure argazkia:</label>
+    <br>
+	<input type="file" name="argazkia" id="argazkia" /> <br />
+	<input type="submit" name="submit" value="Bidali" />
+	</form>
+	</div>
+    </section>
+	<footer class='main' id='f1'>
+		<p><a href="http://en.wikipedia.org/wiki/Quiz" target="_blank">What is a Quiz?</a></p>
+		<a href='https://github.com'>Link GITHUB</a>
+	</footer>
+</div>
+</body>
+</html>
